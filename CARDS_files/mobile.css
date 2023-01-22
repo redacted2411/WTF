@@ -1,0 +1,343 @@
+/* bigger than 922px
+================================================================================= */
+/* MacBook Air
+================================================================================= */
+@media all and (max-width: 1440px) and (max-height: 900px) {
+  .showdown-img {
+    height: 500px;
+  }
+  #showdown-vs {
+    top: 662px;
+  }
+  #showdown-skip {
+    top: 578px;
+  }
+}
+
+/* smaller than 1199px
+================================================================================= */
+@media all and (max-width: 1199px) {
+  hr {
+    margin: 20px 0;
+  }
+  #intro {
+    padding: 50px 0;
+  }
+  .showdown-img {
+    height: 550px;
+  }
+  .showdown-content article {
+    width: calc(100% - 80px);
+    padding-top: 60px;
+  }
+  #showdown-l .showdown-content article {
+    margin: 0 40px 0 auto;
+  }
+  #showdown-r .showdown-content article {
+    margin: 0 auto 0 40px;
+  }
+  .showdown-content article h1,
+  #details-content article h1 {
+    font-size: 26px;
+  }
+  .showdown-content article h3,
+  #details-content article h3 {
+    font-size: 20px;
+  }
+  .showdown-content article h4,
+  #details-content article h4 {
+    font-size: 16px;
+  }
+  #showdown-vs {
+    top: 712px;
+  }
+  #showdown-skip {
+    top: 628px;
+  }
+  #details-content {
+    padding: 40px;
+  }
+  #details-tnails {
+    margin-bottom: 40px;
+  }
+  #gallery,
+  #top10 {
+    padding: 30px 0;
+  }
+  #gallery article h1,
+  #top10 .leaderboard-row h1 {
+    font-size: 20px;
+  }
+  #gallery article h3,
+  #top10 .leaderboard-row h3 {
+    font-size: 14px;
+  }
+  #top10 .leaderboard-row h6 {
+    font-size: 20px;
+  }
+}
+
+/* smaller than 922px
+================================================================================= */
+@media all and (max-width: 991px) {
+  .button,
+  .standard-form button {
+    padding: 12px 40px;
+    font-size: 16px;
+  }
+  .button-sm {
+    padding: 10px 30px;
+    font-size: 12px;
+  }
+  .navbar-nav {
+    margin-top: 20px;
+  }
+  #intro p.lead {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  #intro p {
+    font-size: 20px;
+  }
+  .showdown-img {
+    height: 450px;
+  }
+  #showdown-vs {
+    top: 600px;
+  }
+  #showdown-skip {
+    top: 530px;
+  }
+  .showdown-vote,
+  .showdown-pick {
+    top: -25px;
+    padding: 15px 0;
+    font-size: 20px;
+  }
+  .showdown-content article {
+    padding-top: 50px;
+  }
+  #details-content {
+    padding: 30px;
+  }
+  #details-content p {
+    font-size: 16px;
+  }
+  #details-tnails {
+    margin-bottom: 30px;
+  }
+  #details-buttons .button {
+    width: 100%;
+  }
+  #details-content .button + .button {
+    margin: 10px 0 30px;
+  }
+}
+
+/* bigger than 768px
+================================================================================= */
+@media all and (min-width: 768px) {
+  #showdown #showdown-l:hover,
+  #showdown #showdown-r:hover {
+    background-color: #fff;
+  }
+  #showdown #showdown-l:hover .showdown-vote,
+  #showdown #showdown-r:hover .showdown-vote {
+    margin: -10px auto 10px;
+    color: #fff;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  }
+  #showdown #showdown-l:hover .showdown-vote:hover,
+  #showdown #showdown-l:hover .showdown-vote:focus,
+  #showdown #showdown-r:hover .showdown-vote:hover,
+  #showdown #showdown-r:hover .showdown-vote:focus {
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+  }
+}
+
+/* smaller than 768px
+================================================================================= */
+@media all and (max-width: 767px) {
+  body {
+    /* padding-top: 66px; */
+  }
+  hr {
+    margin: 20px 0;
+  }
+  .leaderboard {
+    display: none;
+  }
+  #nav {
+    padding: 0;
+  }
+  .navbar-brand img {
+    width: auto;
+    height: 40px;
+  }
+  .navbar-dark .navbar-toggler {
+    padding-left: 0;
+    padding-right: 0;
+    border-color: transparent;
+  }
+
+
+  #intro {
+    padding: 25px 0;
+    background: url(/Content/images/LandingPage.jpg) no-repeat 60% 50%;
+    background-size:cover;
+ 
+  }
+  #intro h1 {
+    font-size: 28px;
+  }
+  #intro p.lead {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  #intro p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #showdown-l,
+  #showdown-r {
+    padding-bottom: 15px;
+  }
+  .showdown-img {
+    height: 350px;
+  }
+  .showdown-vote,
+  .showdown-pick {
+    position: relative;
+    display: block;
+    width: 100%;
+    top: auto;
+    margin: -45px 0 15px;
+    padding: 12px 0;
+    font-size: 12px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  #showdown .showdown-vote:hover,
+  #showdown .showdown-vote:focus {
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+  }
+  .showdown-pick strong {
+    color: #fff;
+  }
+  #showdown-vs {
+    top: 260px;
+    border: 1px solid #e6e6e6;
+  }
+  #showdown-skip {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  #showdown-skip a {
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 0;
+  }
+  #showdown-skip a:hover,
+  #showdown-skip a:focus {
+    color: #000;
+    background-color: #fff;
+    border: 0;
+  }
+  .showdown-content article {
+    width: calc(100% - 30px);
+    padding-top: 15px;
+    padding-bottom: 40px;
+  }
+  #showdown-l .showdown-content article {
+    margin: 0 15px 0 auto;
+  }
+  #showdown-r .showdown-content article {
+    margin: 0 auto 0 15px;
+  }
+  .showdown-content article h1,
+  #details-content article h1 {
+    margin: 0 0 5px;
+    font-size: 20px;
+  }
+  .showdown-content article h3,
+  #details-content article h3 {
+    margin: 0 0 3px;
+    font-size: 14px;
+  }
+  .showdown-content article h4,
+  #details-content article h4 {
+    font-size: 14px;
+  }
+  .showdown-content article p,
+  #details-content article p {
+    line-height: 18px;
+  }
+  .showdown-content article p {
+    /*display: none;*/
+  }
+  .showdown-content article p strong,
+  #details-content article p strong {
+    display: block;
+  }
+  .showdown-content .showdown-more {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+  #gallery h1,
+  #top10 h1 {
+    margin: 0;
+    font-size: 26px;
+    line-height: 36px;
+  }
+  #top10 .leaderboard-row h1 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  #top10 .leaderboard-row .fal {
+    display: none;
+  }
+  #gallery ul li {
+    font-size: 13px;
+  }
+  #gallery article h1 {
+    line-height: 24px;
+  }
+  #details {
+    display: block;
+  }
+  #details-img {
+    display: block;
+    width: 100%;
+    height: 400px;
+  }
+  #details-content {
+    display: block;
+    width: 100%;
+    padding: 15px;
+  }
+  #details-content article {
+    max-width: 100%;
+  }
+  #footer h3 {
+    margin-top: 15px;
+  }
+  #footer img {
+    margin-top: 15px;
+  }
+  #powered-by {
+    padding: 15px 0;
+  }
+}
