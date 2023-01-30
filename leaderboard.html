@@ -139,31 +139,35 @@ tr {
           const url = "https://xchain.io/api/holders/SHARPS";
           const leaderboard = document.querySelector("#leaderboard");
           fetch(url)
-        .then(response => response.json())
-        .then(data => {
-          for (let i = 0; i < 10; i++) {
-            const row = document.createElement("tr");
-            const rank = document.createElement("td");
-            const address = document.createElement("td");
-            const estimatedValue = document.createElement("td");
-            const percentage = document.createElement("td");
-            const quantity = document.createElement("td");
+            .then(response => response.json())
+            .then(data => {
+              for (let i = 0; i < 10; i++) {
+                if (data.data[i].address.includes("x7PGCCspbF")) {
+                  continue;
+                }
         
-            rank.textContent = i + 1;
-            address.textContent = data.data[i].address;
-            estimatedValue.textContent = data.data[i].estimated_value.usd;
-            percentage.textContent = data.data[i].percentage;
-            quantity.textContent = data.data[i].quantity;
+                const row = document.createElement("tr");
+                const rank = document.createElement("td");
+                const address = document.createElement("td");
+                const estimatedValue = document.createElement("td");
+                const percentage = document.createElement("td");
+                const quantity = document.createElement("td");
         
-            row.appendChild(rank);
-            row.appendChild(address);
-            row.appendChild(estimatedValue);
-            row.appendChild(percentage);
-            row.appendChild(quantity);
+                rank.textContent = i + 1;
+                address.textContent = data.data[i].address;
+                estimatedValue.textContent = data.data[i].estimated_value.usd;
+                percentage.textContent = data.data[i].percentage;
+                quantity.textContent = data.data[i].quantity;
         
-            leaderboard.appendChild(row);
-          }
-        });
+                row.appendChild(rank);
+                row.appendChild(address);
+                row.appendChild(estimatedValue);
+                row.appendChild(percentage);
+                row.appendChild(quantity);
+        
+                leaderboard.appendChild(row);
+              }
+            });
         </script>
         
 <div id="nav">
