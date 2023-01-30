@@ -116,9 +116,7 @@ tr {
     <div class="container">
         <div class="row leaderboard-row">
             <div class="col-12 col-md-12 mb-2">
-                <h1>TOP 10</h1>
-             
-
+               
             </div>
         </div>
         <hr>
@@ -167,106 +165,7 @@ tr {
           }
         });
         </script>
-        <section id="top10">
-
-          <div class="container">
-              <div class="row leaderboard-row">
-                  <div class="col-12 col-md-12 mb-2">
-                      <h1>TOP 10</h1>
-                   
-      
-                  </div>
-              </div>
-              <hr>
-              <html>
-              </head>
-              <body>
-                <h1>M1 TOP 10</h1>
-                
-                <table id="leaderboard">
-                  <tr>
-                    <th>#</th>
-                    <th>Address</th>
-                    <th>(USD)</th>
-                    <th>%</th>
-                    <th>Sharps</th>
-                  </tr>
-                </table>
-              </body>
-        <script>
-          const url1 = "https://xchain.io/api/holders/YEARCLOSE";
-          const url2 = "https://xchain.io/api/holders/BREADTWO";
-          const url3 = "https://xchain.io/api/holders/FLATMARKET";
-          const url4 = "https://xchain.io/api/holders/RARESILICA";
-          const url5 = "https://xchain.io/api/holders/CRABTRAP";
-          const url6 = "https://xchain.io/api/holders/HOWTOCOOK";
-          const url7 = "https://xchain.io/api/holders/FARMSMELL";
-          const url8 = "https://xchain.io/api/holders/CATCHRARE";
-          const url9 = "https://xchain.io/api/holders/CORNFROG";
-          const url10 = "https://xchain.io/api/holders/HOWTOPOST";
-          const url11 = "https://xchain.io/api/holders/CAPTCHASPELL";
-          const url12 = "https://xchain.io/api/holders/ZKSHARP";
-          const url13 = "https://xchain.io/api/holders/BULLABOBO";
-          const url14 = "https://xchain.io/api/holders/STICKYRICE";
-          const url15 = "https://xchain.io/api/holders/GOLDNUG";
-          const url16 = "https://xchain.io/api/holders/REEE";
-          const url17 = "https://xchain.io/api/holders/STSD";
-          const url18 = "https://xchain.io/api/holders/SUPERHOT";
-          const url19 = "https://xchain.io/api/holders/SOYCHAD";
-          const url20 = "https://xchain.io/api/holders/COWBEAR";
-          const url21 = "https://xchain.io/api/holders/CELSIUS";
-          const url22 = "https://xchain.io/api/holders/SPICEMEME";
-          const url23 = "https://xchain.io/api/holders/REEEE";
-          const url24 = "https://xchain.io/api/holders/BLUESHARP";
-          const url25 = "https://xchain.io/api/holders/HYPERALPHA";
-          const url26 = "https://xchain.io/api/holders/BEEE";
-          const url27 = "https://xchain.io/api/holders/RARESHARP";
-          const url28 = "https://xchain.io/api/holders/TURBU";
-          const url29 = "https://xchain.io/api/holders/SWANFLATION";
-          const url30 = "https://xchain.io/api/holders/SHARPASF";
-          const url30 = "https://xchain.io/api/holders/MONTHCLOSE";
-          
-          let totalQuantity = 0;
-
-const leaderboard2 = document.querySelector("#leaderboard");
-for (const url of urls) {
-  fetch(url)
-    .then(response => response.json())
-    .then(data => {
-      for (let i = 0; i < data.data.length; i++) {
-        if (!data.data[i].address.includes("x7PGCCspbF")) {
-          continue;
-        }
-
-        totalQuantity += data.data[i].quantity;
-
-        if (i < 10) {
-          const row = document.createElement("tr");
-          const rank = document.createElement("td");
-          const address = document.createElement("td");
-          const estimatedValue = document.createElement("td");
-          const percentage = document.createElement("td");
-          const quantity = document.createElement("td");
-
-          rank.textContent = i + 1;
-          address.textContent = data.data[i].address;
-          estimatedValue.textContent = data.data[i].estimated_value.usd;
-          percentage.textContent = data.data[i].percentage;
-          quantity.textContent = data.data[i].quantity;
-
-          row.appendChild(rank);
-          row.appendChild(address);
-          row.appendChild(estimatedValue);
-          row.appendChild(percentage);
-          row.appendChild(quantity);
-
-          leaderboard.appendChild(row);
-        }
-      }
-    });
-}
-console.log("Total quantity:", totalQuantity);
-</script>
+        
 <div id="nav">
 		<div class="container" style="border-bottom: solid 1px #313131;">
 			<div class="row justify-content-sm-center">
