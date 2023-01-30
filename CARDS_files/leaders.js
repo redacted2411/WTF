@@ -1,7 +1,7 @@
 <script>
 async function getAssetInformation() {
   try {
-    const response = await fetch('https://xchain.io/api/asset/holders/SHARPS');
+    const response = await fetch('https://xchain.io/api/holders/SHARPS');
     const assets = await response.json();
     let assetArray = Array.isArray(assets) ? assets : Object.values(assets);
     let assetInfo = "<table><tr><th>Address</th><th>Balance</th></tr>";
