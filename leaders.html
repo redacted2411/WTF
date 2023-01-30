@@ -118,7 +118,7 @@
                 <style>
                   #leaderboard {
                     font-family: Arial, sans-serif;
-                    color: #333;
+                    color: rgb(255, 255, 255);
                   }
                   h1 {
                     font-size: 24px;
@@ -133,7 +133,7 @@
                   }
                   th,
                   td {
-                    border: 1px solid #ddd;
+                    border: 1px solid #ffffff;
                     padding: 8px;
                     text-align: center;
                   }
@@ -142,7 +142,7 @@
                     font-size: 18px;
                   }
                   tr:nth-child(even) {
-                    background-color: #f8f8f8;
+                    background-color: #000000;
                   }
                 </style>
               </head>
@@ -150,6 +150,9 @@
                 <h1>SHARPS Asset Information</h1>
         
                 <script>
+                  window.onload = function() {
+        getAssetInformation();
+      };
                   async function getAssetInformation() {
                     try {
                       const response = await fetch('https://xchain.io/api/holders/SHARPS');
