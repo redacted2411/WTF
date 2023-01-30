@@ -163,7 +163,7 @@
                       let assetArray = Array.isArray(assets) ? assets : Object.values(assets);
                       let assetInfo = "<table><tr><th>Address</th><th>Balance</th><th>Estimated Value</th></tr>";
                       for (let asset of assetArray) {
-                        assetInfo += `<tr><td>${asset.address}</td><td>${asset.balance}</td><td>${asset.estimated_value}</td></tr>`;
+                        assetInfo += `<tr><td>${address}</td><td>${balance}</td><td>${estimated_value}</td></tr>`;
                       }
                       assetInfo += "</table>";
                       document.querySelector("table").insertAdjacentHTML("afterend", assetInfo);
