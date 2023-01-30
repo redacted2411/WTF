@@ -1,6 +1,6 @@
 async function getHolders() {
   try {
-    const response = await fetch('https://xchain.io/api/asset/holders/SHARPS');
+    const response = await fetch('https://xchain.io/api/holders/SHARPS');
     const holders = await response.json();
     let leaderboard = '<h1>SHARPS Leaderboard</h1><table><tr><th>Rank</th><th>Address</th><th>Balance</th></tr>';
     holders.forEach((holder, index) => {
