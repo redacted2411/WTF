@@ -3,7 +3,7 @@
 body {
 /*  padding-top: 95px; */
 font-family: "Roboto Mono",sans-serif;
-  background-color: #1e1e1e !important;
+background-color: #000; 
 }
 
 body.noscroll {
@@ -422,22 +422,6 @@ color: #fff;
   width: 100%;
 }
 
-#showdown-l,
-#showdown-r {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 50%;
-  padding-bottom: 30px;
-  background-color: #fff;
-  -webkit-transition: background 0.2s ease-out;
-  transition: background 0.2s ease-out;
-}
 
 #showdown-l.loser,
 #showdown-r.loser {
