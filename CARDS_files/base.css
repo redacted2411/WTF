@@ -62,7 +62,7 @@ h4 {
 }
 
 hr {
-    margin: 20px 0;
+    margin: 10px 0;
     border-color: #343a40;
 }
 
@@ -161,21 +161,66 @@ hr {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #fff;
+  position: relative;
+  background-color: #242424;
+  border: none;
+  font-size: 16px;
+  color: #f10505;
+  padding: 8px;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus {
-  text-decoration:underline;
-color: #fff;
+  position: relative;
+  background-color: #242424;
+  border: none;
+  font-size: 16px;
+  color: #000000;
+  padding: 8px;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav .show > .nav-link {
-color: #fff;
+.navbar-dark .navbar-nav .show > .nav-link .button {
+  position: relative;
+  background-color: #242424;
+  border: none;
+  font-size: 16px;
+  color: #000000;
+  padding: 8px;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
 }
+
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s}
 
 /* pages
 ================================================================================= */
@@ -265,7 +310,7 @@ color: #fff;
 }
 
 #details-buttons {
-  margin-bottom: 40px;
+  margin-bottom: 5px;
 }
 
 #details-buttons .button {
@@ -282,7 +327,7 @@ color: #fff;
 
 #gallery,
 #top10 {
-  padding: 50px 0 50px;
+  padding: 10px 0 50px;
   color:#fff;
   background-color: #000000;
 }
